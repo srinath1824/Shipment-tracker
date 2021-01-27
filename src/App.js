@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Container from '@material-ui/core/Container';
+import Login from "./Login"
+import ShippingLabelComponent from "./features/shipping-label-maker/ShippingLableComponent";
 
 function App() {
+  const [login, setLogin] = useState(false);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleTextChange = (e) => {
+    if(e.target.name === "username") {
+        setUsername(e.target.value);
+    } else {
+        setPassword(e.target.value);
+    }
+};
+
+  const handleLogin = () => {
+    if(username === "guest" && password === "guest") {
+        setLogin(true);
+    }
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Container maxWidth="md">
+        { !login ? <Login handleLogin={handleLogin} handleTextChange={(e) => handleTextChange(e)}/> : <ShippingLabelComponent />
+        }
+      </Container>
     </div>
   );
 }
