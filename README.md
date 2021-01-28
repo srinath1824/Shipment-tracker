@@ -7,10 +7,10 @@
 
 
 # `Authentication`
-### Username: ##guest
-### Password: ##guest
+### Username: guest
+### Password: guest
 
-# Step 1
+# Step 1 
 
 ## `Receiver's address`
 
