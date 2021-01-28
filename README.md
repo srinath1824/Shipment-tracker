@@ -1,8 +1,8 @@
 
-# Install dependencies
+# `Install dependencies`
 ### npm install
 
-# start project
+# `Start project`
 ### npm start
 
 
@@ -10,30 +10,22 @@
 ### Username: guest
 ### Password: guest
 
-# Step 1 
-
-## `Receiver's address`
+# `Step 1 - Receiver's address`
 
 Enter receiver's details for shipping.<br />
 Added validation for every field.
 
-# Step 2
-
-## `Sender's address`
+# `Step 2 - Sender's address`
 
 Enter sender's details for shipping.<br />
 Added validation for every field.
 
-# Step 3
-
-## `Weight`
+# `Step 3 - Weight`
 
 Enter Weight in Kg.<br />
 Added validation, it takes only number as input.
 
-# Step 4
-
-## `Shipping option`
+# `Step 4 - Shipping option`
 
 Select shipping options from dropdown.<br />
 There are two types.<br />
@@ -41,9 +33,7 @@ There are two types.<br />
 2. Priority<br />
 Added validation if field is not selected.
 
-# Step 5
-
-## `Preview Page`
+# `Step 5 - Preview Page`
 Shows all details entered.<br/>
 Calculates total price depends on weight and shiping option.
 
