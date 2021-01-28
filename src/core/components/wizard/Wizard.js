@@ -16,7 +16,7 @@ export default function Wizard(props) {
                     <Grid item xs={4}>{data.label}:</Grid>
                     <Grid item xs={8}>
                     { data.element === "textField" ? 
-                        <TextField required id="outlined-basic" value={typeof values === "object" ? values[data.label] : values} name={data.label} onChange={(e) => props.handleTextFieldChange(e)} label={`Enter ${data.label}`} variant="outlined" />
+                        <TextField type={typeof values !== "object" && "number" } required id="outlined-basic" value={typeof values === "object" ? values[data.label] : values} name={data.label} onChange={(e) => props.handleTextFieldChange(e)} label={`Enter ${data.label}`} variant="outlined" />
                         : <FormControl variant="outlined" style={{minWidth: 150}}>
                             <InputLabel id="demo-simple-select-outlined-label">shipping option</InputLabel>
                             <Select

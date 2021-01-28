@@ -188,7 +188,7 @@ export default function ShipingLabelComponent() {
         values = shippingData.to;
         break;
     case 3: 
-        title = "Enter the weight";
+        title = "Enter the weight in Kg";
         values = shippingData.weight;
         break;
     case 4: 
