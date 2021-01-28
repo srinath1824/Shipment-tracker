@@ -44,9 +44,8 @@ Added validation if field is not selected.
 # Step 5
 
 ## `Preview Page`
-
 Shows all details entered.<br/>
-### Calculates total price depening upon weight and shipping option selected.
+Calculates total price depends on weight and shiping option.
 
 # `Features`
 
@@ -54,6 +53,5 @@ Shows all details entered.<br/>
 ## We can go to previous and next step at any time.
 ## Added progress bar to check the progress of shipping label Maker application.
 ## Validation at each and every step.
-## Calculates total price depends on weight and shiping option
 
 
